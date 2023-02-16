@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html>
+
+
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <!-- /* bootstrap 5.3 */ -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
+        
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <!-- /* bootstrap 5.3 end */ -->
+        
+        
+        <!-- /* Style sheet used to import icons from fontawesome */ -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+        
+        
+        
+        
+        <!-- /* Formatation Style CSS */ -->
+        <link rel="stylesheet" type="text/css" href="main.css">
+
+
+        
+        
+        <title> Pop Beats</title>
+
+       
+
+    </head>
+
+
+
+    <h1></h1>
+
+
+    <header>
+
+                <img class="logomain" src="img/poplogo.png">
+
+    </header>
+
+
+
+    <body>
+        
+        <!------------------------------ Main Menu--------------------------->         
+    <div class="container">
+        
+        <div class="row">
+            <div class ="col-12 topnav">
+            
+                <a class="col-sm-3 active"   href="index.html">Home</a>
+                <a class="col-sm-3" href="library.html">Library</a>
+                <a class="col-sm-3" href="shop.html">Shop</a>
+                <a class="col-sm-3" href="help.html">Help</a>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+        <!------------------------------Album Pictures Inside the Body--------------------------->
+
+        
+        <div class="Container">   
+            
+
+            
+            <div class="row iconI">
+                
+                
+
+                
+                <div class="cover">
+                
+                    <div class = "col-4 album1">
+                
+                        <img  src= "img/album1.png" width="220px" height="220px" alt="Anxiety"/>
+                        <div><button type="Button" onclick="location.href='shop.html';">BUY NOW</button></div>
+                
+                    </div>
+                    
+                    <div class = "col-4 album2">
+                        
+                        <img  src="img/album2.png" href="shop.html" width="220px" height="220px" alt="Summer Solstice on the June Planet"/>
+                        <div><button type="Button" onclick="location.href='shop.html';">BUY NOW</button></div>
+                    
+                    </div>
+                    
+                    <div class = "col-4 album3">
+                        
+                        <img  src="img/album3.png" width="220px" height="220px" alt="You Will Never See Me Coming"/>
+                        <div><button type="Button" onclick="location.href='shop.html';">BUY NOW</button></div>
+                    
+                    </div>
+                    
+                    <div class = "col-4 album4">
+                        
+                        <img  src="img/album4.png" width="220px" height="220px" alt="Timpani Beat"/>
+                        <div><button type="Button" onclick="location.href='shop.html';">BUY NOW</button></div>
+        
+                    </div>
+                
+                
+                
+            </div>      
+            
+
+
+            </div>
+        
+        </div>    
+        
+        
+         <!------------------------------Java Script Audio Player--------------------------->
+        <div class="audioplayer">
+        
+            <h1></h1>
+
+            
+                 
+            <div class="container"> 
+                
+                <!-- Class "description" contains Song and Artist Name wich is replaced by an array inside script.js -->   
+                <div class="description">
+    
+                    <h2>Song Name</h2>
+                    <i>Artist Name</i>
+                </div>        
+                
+
+                <!-- Class "timestamp" contains songs "start", "end" and progress "bar" information inside script.js -->        
+                    <div class="offset-1 timestamp">
+                        <p class="col-sm-2 start">0:00</p>
+                        
+                        <p>
+                        <div class="col-6 justify-content-center align-items-center duration">
+                    
+                    
+                        
+                                <div class="bar">
+                                    <progress value="0" max="1"></progress>
+                                    <div class="dot"></div>
+                                </div>
+                            </div>  
+                        </p>
+
+                        <p class="col-sm-2 end">4:00</p>
+                    </div>
+              
+              
+              
+                </div>
+                
+        <!-- Class "player" contains buttons used by the audio player, "fas" + "2nd Class name" uses a stylesheet from -->      
+                    <div class="col-sm-4 col-md-4 col-lg-4 offset-6 player"> <!-- Col attribute used to make div responsive. -->
+                        
+                        <i class="fas fa-backward skipbt prevbt"></i>
+                        <i class="fas fa-play-circle playbt"></i>
+                        <i class="fas fa-pause-circle pausebt"></i>
+                        <i class="fas fa-forward skipbt skipsong"></i>
+                        
+                    </div>
+                
+                </div>
+                <audio src="music/Anxiety - NEFFEX.mp3"></audio> 
+                <script src="script.js"></script> <!-- import attributes from script.js and aplly to this page -->
+                <script src="coverslider.js" defer></script> <!-- script used to make the albums slide when drag -->
+    
+        </div>
+
+
+
+    </body>
+
+
+
+
+
+
+        
+
+
+</html>

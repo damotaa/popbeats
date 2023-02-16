@@ -1,0 +1,333 @@
+/* Logo Inside Header Propreties of Positions */
+header{
+    z-index: 2;
+    text-align: center;
+    position: flex;
+    width: 0;
+    
+}
+/* Main Page Default Settings */
+body, html{
+    background-color: #0b1622;
+    background-image: url('img/bgtexture.jpg');
+    margin: 0;
+    left: 0;
+    position: flex;
+    overflow-x: hidden;
+
+}
+
+
+
+/* "Menu navigation" */
+
+.topnav{
+     overflow: hidden;
+     background-color: #0b1622;
+    
+}
+
+/* a position atributes inside class topnav */
+.topnav a{
+
+    float: left;
+    color: #f4f4f4;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 14px 16px;
+
+}
+
+
+/* Hover and Active proprieties inside menu */
+.topnav a:hover{
+    background-color: #FFBF00;
+    color: rgb(255, 255, 255);
+}
+
+.topnav a.active{
+    background-color: #291086;
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+
+/* Where Albums style propreties are located */
+.cover {
+    top: 0;
+    display: flex;  
+    width: 100%;
+    padding-top: 75px;
+    z-index: 2;
+    text-align: center;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    cursor: pointer;
+
+
+}
+
+
+
+/* Images inside the div cover */
+.cover img{
+    
+    border-radius: 20px; /* Create a smooth border to the images inside class="cover" */
+    z-index: 0;
+    
+}
+
+/* Buttons Settings */
+.cover div button{
+    
+    width: 100%px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: #FFD700;
+    color: white;
+    font-family: 'Arial Black';
+    line-height: 40px;
+    height: 5px;
+    border-color: #FFBF00;
+
+}
+
+
+/* Music Player DIV ------------------------------------------------------------------------------------------ */
+
+
+
+
+/* java script audioplayer */
+.audioplayer{
+
+    padding: 0;
+    color: #ddd;
+    background-color: #161a1d;
+    background-image: linear-gradient(to right, #111215, #1a1e24, #120c12);
+    width: 100%;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    align-items: center;
+
+}
+
+.audioplayer p{
+   
+    margin: auto;
+    text-align: center;
+    text-shadow: 2px 2px #05445E;
+    
+}
+
+
+.description{
+    
+    margin: auto;
+    text-shadow: 2px 2px black;
+    display: block;
+    left: 0;
+
+}
+
+.duration{
+    padding-top: 10px;
+}
+
+
+/* -------- Name of the song and Artist ------- */
+.description h2{
+
+    font-family: Arial, Rounded MT Bold;
+    font-style: italic;
+    left: 0;
+    
+
+}
+
+.description i{
+
+    width: 50%;
+    left: 0;
+
+}
+
+
+
+/* -------- Progressbar Customization ------- */
+progress{
+    width: 0;
+    height: 5px;
+    background-color: #05445E;
+
+    
+
+}
+
+.bar{
+
+    display: flex;
+    height: 10px;
+    border: 3px solid rgb(234, 225, 225);
+    border-radius: 1px;
+    
+} 
+
+
+.dot{
+    width: 15px;
+    height: 10px;
+    background-color: #05445E;
+    border-radius: 10%;
+    margin-left: -10px;
+    margin-top: -2px;
+}
+
+
+.timestamp{
+    
+    padding-left: 0;
+    padding-top: 5px;
+    margin-top: 0;
+    display: flex;
+    left:0;
+    
+}
+
+
+/* -------- Player Buttons Propreties ------- */
+.player {
+    
+    padding: 0 ;
+    text-align: center;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+
+    
+}
+
+
+.playbt, .pausebt{
+    font-size: 40px ;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    
+}
+
+.skipbt{
+    font-size: 30px;
+    cursor: pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.pausebt{
+    display: none;
+    cursor: pointer;
+}
+
+/* ---------------------- Library Page ------------------ */
+
+.lib{
+    
+    color: #eee;
+    display: flex;
+    padding-left: 50px;
+    margin-top: 80px ;
+    width: 800px;
+    text-align: left;
+    flex-direction: column;
+    padding-top: 30px;
+    background-color: #161a1d;
+    font-family: 'Arial Black';
+    
+
+}
+
+
+.playlib{
+
+    width: 52px;
+    height: 52px; 
+}
+
+/* ---------------------- Help Page ------------------ */
+
+.formss{
+    
+    color: #eee;
+    width: 800px;
+    text-align: center;
+    flex-direction: column;
+    padding-top: 30px;
+    background-color: #0b1622;
+    border-radius: 10px;
+    position: relative;
+
+
+}
+
+.insideforms form{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, Rounded MT Bold;
+    border-radius: 10px;
+    
+    
+
+}
+
+.insideforms h2{
+
+    font-family: 'Arial Black';
+    margin-bottom: 40px;
+
+}
+.insideforms div button{
+    margin-bottom: 40px;
+    width: 100%px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: #FFD700;
+    color: white;
+    font-family: 'Arial Black';
+    line-height: 40px;
+    height: 5px;
+    border-color: #FFBF00;
+}
+
+
+
+/* ---------------------- Shop Page ------------------ */
+
+.shop{
+    
+    color: #eee;
+    display: flex;
+    margin-top: 80px ;
+    width: 800px;
+    text-align: center;
+    flex-direction: column;
+    padding-top: 30px;
+    background-color: #0b1622;
+    font-family: 'Arial Black';
+
+}
+
+.insidelib{
+
+    width: 52px;
+    height: 52px; 
+}
+
